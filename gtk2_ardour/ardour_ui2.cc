@@ -430,6 +430,7 @@ ARDOUR_UI::setup_transport ()
 	midi_panic_button.set_icon (ArdourIcon::TransportPanic);
 
 	/* transport control size-group */
+	roll_button.set_size_request (40, 40);  
 
 	Glib::RefPtr<SizeGroup> transport_button_size_group = SizeGroup::create (SIZE_GROUP_BOTH);
 	transport_button_size_group->add_widget (goto_start_button);
